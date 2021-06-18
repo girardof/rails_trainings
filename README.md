@@ -10,4 +10,4 @@ Slides created with [Marp](https://marp.app/) :
 `marp slides.md`
 
 ### Export to pdf
-`marp --pdf slides.md`
+`marp --pdf --allow-local-files slides.md`

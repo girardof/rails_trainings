@@ -39,11 +39,11 @@ Introduction & fundamentals
 - Haml
 - Angular 1
 - helpers
-<!-- helpers are available in all views 
-     example : `network_episode_permalink_url` in `app/helpers/blog_helper.rb` -->
 - Coffee script
 - Cells
-<!-- specify they should not create new cells -->
+<!-- helpers are available in all views 
+     example : `network_episode_permalink_url` in `app/helpers/blog_helper.rb` 
+     specify they should not create new cells -->
 
 ---
 
@@ -97,13 +97,15 @@ Introduction & fundamentals
 
 ---
 
-# [Active record](https://guides.rubyonrails.org/active_record_basics.html) - database manager
+# [Active record](https://guides.rubyonrails.org/active_record_basics.html) 
+
+**database manager**
 
 - Schema configured in `db/schema.rb`
-<!-- contain the current schema of the database
-     automatically updated with migrations -->
 - Uses migrations files stored in `db/migrate`
-<!-- fire a rails console and show how to quickly CRUD in the db
+<!-- contain the current schema of the database
+     automatically updated with migrations 
+     fire a rails console and show how to quickly CRUD in the db
      run a migration file -->
 
 --- 
@@ -149,8 +151,8 @@ resources :networks, only: %i[index show create destroy]
 
 - [public API](https://app.podigee.com/api-docs) 
 - private API stored in `app/controllers/api/` 
-<!-- ideally they should not create anything in the private as we want to get ride of it -->
 - how to find endpoints
+<!-- ideally they should not create anything in the private as we want to get ride of it -->
 
 --- 
 
