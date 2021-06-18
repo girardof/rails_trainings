@@ -26,7 +26,7 @@
 
 ### Run only failing specs from previous run
 
-`bundle exec rspec --only-failing`
+`bundle exec rspec --only-failures`
 
 # Rails basics
 
