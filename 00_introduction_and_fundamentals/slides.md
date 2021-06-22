@@ -38,7 +38,8 @@ Introduction & fundamentals
 **Tools and library**
 - Haml
 - Angular 1
-- helpers
+- Helpers
+- [Internationalization](https://guides.rubyonrails.org/i18n.html)
 - Coffee script
 - Cells
 <!-- helpers are available in all views 
@@ -86,6 +87,11 @@ Introduction & fundamentals
 - Represent the data
 - Interact with the database (postgreSQL)
 - Check for validity of data 
+- Relations between models
+- Validation
+- Before filters
+- Scopes
+
 ---
 
 # Controllers 
@@ -117,7 +123,7 @@ Introduction & fundamentals
 - development
 - test
 <!-- in console `RAILS_ENV=test bundle exec rails c` uses a different database than development
-     development is the default 
+     dev is the default 
      same for running migrations -->
 
 ---
@@ -131,6 +137,24 @@ resources :networks, only: %i[index show create destroy]
 ```
 <!-- show `~/work/podigee/app/controllers/networks_controller.rb` -->
 
+---
+
+# Asset pipeline
+
+- Sprockets 
+- Webpack
+- [Why Rails uses both](https://rossta.net/blog/why-does-rails-install-both-webpacker-and-sprockets.html)
+
+```js
+// Sprockets
+//= require jquery
+
+// Webpack
+import '../application.css'
+```
+
+<!-- for sprockets show `application.js` and `application.css` 
+     sprockets : written in ruby, legacy -->
 ---
 
 # Rake tasks
@@ -156,6 +180,19 @@ resources :networks, only: %i[index show create destroy]
 
 --- 
 
-# services fodler
+# Dependencies
 
-- creator and updator files (if enough time)
+- ruby gems
+- bundler 
+- gemfile
+
+---
+
+# Sidekiq
+
+---
+
+# Services folder
+
+- creator and updator files 
+<!-- if enough time -->
