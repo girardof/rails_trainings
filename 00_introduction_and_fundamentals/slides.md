@@ -12,11 +12,14 @@ Introduction & fundamentals
 ## Where to get informations
 
 - [Rails guide](https://guides.rubyonrails.org/)
+- [Rails API](https://api.rubyonrails.org/)
 - [Gist with common commands](https://github.com/girardof/rails_trainings/blob/main/rails_gist.md)
 
 ---
 
-## Rails philosophy 
+## What is Rails ?
+
+**Philosophy**
 
 - [Don't Repeat Yourself](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)
 - [Convention Over Configuration](https://en.wikipedia.org/wiki/Convention_over_configuration)
@@ -36,11 +39,12 @@ Introduction & fundamentals
 - Allow user to interact with the data
 
 **Tools and library**
+
 - Haml
 - Angular 1
 - Helpers
 - [Internationalization](https://guides.rubyonrails.org/i18n.html)
-- Coffee script
+- [Coffee script](https://coffeescript.org/)
 - Cells
 <!-- helpers are available in all views 
      example : `network_episode_permalink_url` in `app/helpers/blog_helper.rb` 
@@ -82,7 +86,18 @@ Introduction & fundamentals
 
 ---
 
-# Models
+### Views - Internationalization
+
+- Uses locales files
+- Syntax :
+```
+t('reset_password.reset_page.password_changed')
+I18n.t('forgot_password.reset_cannot_be_delivered')
+```
+
+---
+
+## Models
 
 - Represent the data
 - Interact with the database (postgreSQL)
@@ -94,7 +109,7 @@ Introduction & fundamentals
 
 ---
 
-# Controllers 
+## Controllers 
 
 - Find the correct view 
 - Check permissions
@@ -103,7 +118,7 @@ Introduction & fundamentals
 
 ---
 
-# [Active record](https://guides.rubyonrails.org/active_record_basics.html) 
+## [Active record](https://guides.rubyonrails.org/active_record_basics.html) 
 
 **database manager**
 
@@ -116,7 +131,7 @@ Introduction & fundamentals
 
 --- 
 
-# Environments
+## Environments
 
 `RAILS_ENV=`
 - production
@@ -128,7 +143,7 @@ Introduction & fundamentals
 
 ---
 
-# [Routing](https://guides.rubyonrails.org/routing.html)
+## [Routing](https://guides.rubyonrails.org/routing.html)
 
 Configured in `config/routes.rb`
 
@@ -139,7 +154,7 @@ resources :networks, only: %i[index show create destroy]
 
 ---
 
-# Asset pipeline
+## Asset pipeline
 
 - Sprockets 
 - Webpack
@@ -157,7 +172,7 @@ import '../application.css'
      sprockets : written in ruby, legacy -->
 ---
 
-# Rake tasks
+## Rake tasks
 
 - Small script to perform specific action
 - Stored in `lib/tasks`
@@ -167,11 +182,11 @@ import '../application.css'
 
 ---
 
-# Image server
+## Image server
 
 --- 
 
-# API 
+## API 
 
 - [public API](https://app.podigee.com/api-docs) 
 - private API stored in `app/controllers/api/` 
@@ -180,7 +195,7 @@ import '../application.css'
 
 --- 
 
-# Dependencies
+## Dependencies
 
 - ruby gems
 - bundler 
@@ -188,11 +203,14 @@ import '../application.css'
 
 ---
 
-# Sidekiq
+## Sidekiq
+
+- run tasks in the background
+- scheduler
 
 ---
 
-# Services folder
+## Services folder
 
 - creator and updator files 
 <!-- if enough time -->
