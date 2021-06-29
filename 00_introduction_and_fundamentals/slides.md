@@ -56,7 +56,14 @@ Introduction & fundamentals
 
 - difference `ngShow`/`ngHide` and `ngIf`
 <!-- ngIf include or not the section in the DOM while ngShow and ngHide uses css to display or hide -->
-  
+ 
+ ```yaml
+ %span{ng: {mouseenter: 'showEdit = true', mouseleave: 'showEdit = false'}}
+   %span{ng: {click: 'edit()', hide: 'editMode'}}
+   %a{ng: {click: 'edit()', show: 'showEdit'}}
+   
+.widget-box.transparent{ng: {if: 'open_invoice.id && should_show_open_invoice_details()'}}
+ ```
 ---
 
 ### Views - [Haml](https://haml.info/)
@@ -106,6 +113,7 @@ I18n.t('forgot_password.reset_cannot_be_delivered')
 - Validation
 - Before filters
 - Scopes
+<!-- scope user : with_domain -->
 
 ---
 
@@ -182,13 +190,9 @@ import '../application.css'
 
 ---
 
-## Image server
-
---- 
-
 ## API 
 
-- [public API](https://app.podigee.com/api-docs) 
+- [public API](https://app.podigee.com/api-docs) stored in `app/controllers/api/v1` 
 - private API stored in `app/controllers/api/` 
 - how to find endpoints
 <!-- ideally they should not create anything in the private as we want to get ride of it -->
