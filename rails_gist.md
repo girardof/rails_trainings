@@ -11,9 +11,15 @@
 
 `bundle exec rails db:migrate`
 
-## Show all routes
+## Routes
+
+### Show all routes
 
 `bundle exec rails routes`
+
+### Show all route helpers 
+
+`Rails.application.routes.named_routes.helper_names`
 
 ## Rspec
 ### Run all specs
